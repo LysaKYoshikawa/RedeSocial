@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using RedeSocialAPI.Data;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<RedeSocialAPIContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("RedeSocialAPIContext") ?? throw new InvalidOperationException("Connection string 'RedeSocialAPIContext' not found.")));
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

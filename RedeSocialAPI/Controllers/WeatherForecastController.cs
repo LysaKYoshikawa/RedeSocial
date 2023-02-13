@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using RedeSocialAPI.Models;
 
 namespace RedeSocialAPI.Controllers
 {
