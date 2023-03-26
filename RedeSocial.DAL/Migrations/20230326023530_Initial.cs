@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace RedeSocialAPI.Migrations
+namespace RedeSocial.DAL.Migrations
 {
     public partial class Initial : Migration
     {

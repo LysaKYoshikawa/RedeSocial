@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RedeSocialAPI.Data;
-using RedeSocialAPI.Models;
+using RedeSocial.DAL.Data;
+using RedeSocial.BLL.Models;
 
 namespace RedeSocialAPI.Controllers
 {

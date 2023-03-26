@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RedeSocialAPI.Data;
+using RedeSocial.DAL.Data;
 
 #nullable disable
 
-namespace RedeSocialAPI.Migrations
+namespace RedeSocial.DAL.Migrations
 {
     [DbContext(typeof(RedeSocialAPIContext))]
-    [Migration("20230213005504_Initial")]
+    [Migration("20230326023530_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,7 +23,7 @@ namespace RedeSocialAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("RedeSocialAPI.Models.TodoItem", b =>
+            modelBuilder.Entity("RedeSocial.BLL.Models.TodoItem", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()

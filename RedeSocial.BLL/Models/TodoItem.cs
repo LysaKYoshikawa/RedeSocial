@@ -1,4 +1,4 @@
-﻿namespace RedeSocialAPI.Models
+﻿namespace RedeSocial.BLL.Models
 {
     public class TodoItem
     {

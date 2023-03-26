@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RedeSocialAPI.Data;
+using RedeSocial.DAL.Data;
 
 #nullable disable
 
-namespace RedeSocialAPI.Migrations
+namespace RedeSocial.DAL.Migrations
 {
     [DbContext(typeof(RedeSocialAPIContext))]
     partial class RedeSocialAPIContextModelSnapshot : ModelSnapshot
@@ -21,7 +21,7 @@ namespace RedeSocialAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("RedeSocialAPI.Models.TodoItem", b =>
+            modelBuilder.Entity("RedeSocial.BLL.Models.TodoItem", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()

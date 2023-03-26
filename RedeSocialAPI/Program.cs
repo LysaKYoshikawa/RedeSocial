@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using RedeSocialAPI.Data;
+using RedeSocial.DAL.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
